@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header>
-      <h1>To Do List</h1>
+    <header className="flex justify-center">
+      <h2 className="text-4xl font-extrabold dark:text-white">To Do List</h2>
     </header>
   )
 }

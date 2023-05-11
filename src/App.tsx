@@ -41,14 +41,15 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="flex-col">
       <Header />
       <ToDoList
         toDoList={toDoList}
         toggleToDo={toggleToDo}
         clearCompletedToDos={clearCompletedToDos}
+        className="flex-initial w-64"
       />
-      <ToDoForm addTodo={addToDo} />
+      <ToDoForm addTodo={addToDo} className="flex-initial w-64" />
     </div>
   )
 }
