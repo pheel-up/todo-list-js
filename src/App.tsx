@@ -12,7 +12,7 @@ import data from './data.json'
 function App() {
   const [toDoList, setToDoList] = useState(data)
 
-  const toggleToDo = (toDoId) => {
+  const toggleToDo = (toDoId: Number) => {
     let toDoToggled = toDoList.map((toDo) => {
       // console.log({ ...toDo, done: !toDo.done })
       return toDo.id === Number(toDoId)
@@ -23,7 +23,7 @@ function App() {
     setToDoList(toDoToggled)
   }
 
-  const addToDo = (input) => {
+  const addToDo = (input: string) => {
     let toDoListCopy = [...toDoList]
     toDoListCopy = [
       ...toDoListCopy,
